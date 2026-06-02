@@ -1,4 +1,4 @@
-````md
+
 <div align="center">
 
 # 🚀 FocusFlow — AI-Powered Student Productivity App
@@ -386,4 +386,3 @@ main
 Made with ❤️ using Flutter & Firebase
 
 </div>
-````
