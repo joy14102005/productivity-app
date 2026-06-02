@@ -1,0 +1,49 @@
+name: focusflow
+description: A modern AI-powered student productivity app
+publish_to: 'none'
+version: 0.1.0+1
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: any
+
+  # Firebase
+  firebase_core: any
+  firebase_auth: any
+  cloud_firestore: any
+  firebase_messaging: any
+
+  # Local storage
+  shared_preferences: any
+  hive: any
+  hive_flutter: any
+  google_sign_in: any
+
+  # UI & utilities
+  flutter_svg: any
+  google_fonts: any
+  intl: any
+  animations: any
+  percent_indicator: any
+  flutter_staggered_animations: any
+  connectivity_plus: any
+  http: any
+  uuid: any
+  flutter_local_notifications: any
+  fl_chart: any
+  timezone: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/

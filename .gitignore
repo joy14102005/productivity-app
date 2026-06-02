@@ -1,0 +1,28 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+.pub/
+build/
+ios/Pods/
+**/Generated.xcconfig
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-plugins-dependencies
+.flutter-plugins
+.idea/
+.vscode/
+*.iml
+*.hprof
+*.log
+*.tmp
+.DS_Store
+
+# Android
+/android/.gradle
+**/build/
+
+# Obvious
+pubspec.lock
+
+# Sensitive
+.env
