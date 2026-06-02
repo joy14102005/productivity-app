@@ -1,85 +1,389 @@
-# FocusFlow (productivity-app)
+````md
+<div align="center">
 
-FocusFlow is a modern AI-powered student productivity app built with Flutter and Firebase. This repository contains a skeleton that implements app structure, theming, onboarding, splash screen, and basic auth stubs.
+# 🚀 FocusFlow — AI-Powered Student Productivity App
 
-## What I created
-- Flutter project skeleton with Material 3 theming
-- Riverpod state management setup
-- Firebase initialization (add your platform files)
-- Splash and Onboarding screens
-- Auth service stub and Login screen
-- Folder structure according to the spec
+### 📚 *Study Smarter • Focus Better • Achieve More*
 
-## Next steps (you must perform locally)
-1. Install Flutter SDK (latest stable)
-2. Configure Firebase for iOS and Android and add `google-services.json` / `GoogleService-Info.plist`.
-3. Run `flutter pub get`.
-4. Run the app with `flutter run`.
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=24&duration=3000&color=7B61FF&center=true&vCenter=true&width=700&lines=AI-Powered+Student+Productivity+App;Smart+Study+Planner+%7C+Pomodoro+Timer;Track+Habits+%7C+Boost+Focus;Flutter+%2B+Firebase+Powered" />
 
-## Firebase setup
-Follow the official Firebase Flutter docs to add Android and iOS apps. After adding, download the config files and add them to the platform directories. Also generate `firebase_options.dart` using `flutterfire` CLI and place it in `lib/`.
+<br>
 
-### Google Sign-In and OAuth
-To enable Google Sign-In you must configure OAuth client IDs in the Google Cloud Console and add the required platform configuration:
+![Flutter](https://img.shields.io/badge/Flutter-Framework-02569B?style=for-the-badge&logo=flutter)
+![Firebase](https://img.shields.io/badge/Firebase-Backend-FFCA28?style=for-the-badge&logo=firebase)
+![Riverpod](https://img.shields.io/badge/Riverpod-State_Management-7B61FF?style=for-the-badge)
+![Material3](https://img.shields.io/badge/UI-Material_3-6200EE?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-In_Development-success?style=for-the-badge)
 
-- Android: add `google-services.json` to `android/app/` and configure the SHA-1/SHA-256 fingerprints for the app in Firebase console.
-- iOS: add `GoogleService-Info.plist` to `ios/Runner/` and configure reversed client id in the Info.plist if necessary.
+</div>
 
-After platform config is in place, the app will use the `google_sign_in` package to perform OAuth and Firebase Auth to sign in. The AuthService implements `signInWithGoogle()` which expects Firebase to be initialized.
+---
 
-## Project structure
-See `lib/` for a full feature-ready structure:
-- lib/core/
-- lib/models/
-- lib/services/
-- lib/providers/
-- lib/screens/
-- lib/widgets/
-- lib/utils/
-- lib/theme/
+## ✨ About FocusFlow
 
-## Notes
-This is a starting point. I can continue implementing each feature screen-by-screen, add Firestore models, services, offline support, and tests. Tell me which screen or feature you'd like implemented next or say "implement all features" and I'll proceed iteratively.
+> **FocusFlow** is a modern **AI-powered student productivity app** built with **Flutter** and **Firebase**.
 
-## How to run locally (Mac/Linux)
+It helps students:
 
-1. Install Flutter (stable) following https://flutter.dev/docs/get-started/install
-2. From the project root:
+✨ Stay productive  
+📚 Plan studies smarter  
+⏳ Improve focus  
+🔥 Build habits  
+📊 Track progress  
+
+This repository contains a **starter skeleton** implementing:
+
+- Flutter project structure
+- Material 3 theming
+- Splash screen
+- Onboarding flow
+- Authentication setup
+- Firebase initialization
+- Riverpod state management
+
+---
+
+## 🌸 What I Created
+
+<table>
+<tr>
+<td align="center" width="300">
+
+### 🎨 UI & Theming
+✔ Material 3 Design  
+✔ Clean App Theme  
+✔ Responsive Layout
+
+</td>
+
+<td align="center" width="300">
+
+### 🚀 App Foundation
+✔ Flutter Project Skeleton  
+✔ Folder Architecture  
+✔ Firebase Initialization
+
+</td>
+</tr>
+
+<tr>
+<td align="center" width="300">
+
+### 📱 User Experience
+✔ Splash Screen  
+✔ Onboarding Screens  
+✔ Login UI
+
+</td>
+
+<td align="center" width="300">
+
+### ⚡ State Management
+✔ Riverpod Setup  
+✔ Auth Service Stub  
+✔ Scalable Structure
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🧠 Features
+
+<table align="center">
+<tr>
+
+<td align="center" width="220">
+
+### 📚 Smart Study Planner
+AI-powered study recommendations.
+
+</td>
+
+<td align="center" width="220">
+
+### ⏳ Pomodoro Timer
+Focus sessions & productivity boost.
+
+</td>
+
+<td align="center" width="220">
+
+### 📋 Task Manager
+Manage deadlines and priorities.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center" width="220">
+
+### 🔥 Habit Tracker
+Build daily consistency.
+
+</td>
+
+<td align="center" width="220">
+
+### 📊 Analytics Dashboard
+Track study performance.
+
+</td>
+
+<td align="center" width="220">
+
+### 🔔 Smart Reminders
+Never miss study goals.
+
+</td>
+
+</tr>
+</table>
+
+---
+
+## 🛠️ Tech Stack
+
+```text
+📱 Flutter
+🔥 Firebase
+⚡ Riverpod
+🎨 Material 3
+☁️ Cloud Firestore
+🔔 Firebase Cloud Messaging
+💾 Shared Preferences
+🗄️ Hive Database
+```
+
+---
+
+## 📂 Project Structure
+
+```text
+lib/
+├── core/
+├── models/
+├── services/
+├── providers/
+├── screens/
+├── widgets/
+├── utils/
+├── theme/
+└── main.dart
+```
+
+---
+
+## ⚙️ Firebase Setup
+
+### Android Configuration
+
+```text
+1. Add google-services.json → android/app/
+2. Configure SHA-1 & SHA-256 fingerprints
+3. Enable Firebase Authentication
+```
+
+### iOS Configuration
+
+```text
+1. Add GoogleService-Info.plist → ios/Runner/
+2. Configure reversed client ID
+3. Enable Firebase Authentication
+```
+
+### Generate Firebase Options
+
+Run:
+
+```bash
+flutterfire configure
+```
+
+Then place:
+
+```text
+firebase_options.dart
+```
+
+inside:
+
+```text
+lib/
+```
+
+---
+
+## 🔐 Google Sign-In & OAuth
+
+To enable **Google Sign-In**, configure OAuth Client IDs in Google Cloud Console.
+
+### Required Setup
+
+✔ Firebase Authentication  
+✔ Google Provider Enabled  
+✔ SHA Keys Added  
+✔ Platform Configured
+
+Packages used:
+
+```text
+google_sign_in
+firebase_auth
+```
+
+The app includes:
+
+```text
+AuthService.signInWithGoogle()
+```
+
+---
+
+## 🚀 Run Locally
+
+### Step 1 — Install Flutter SDK
+
+Install latest Flutter version:
+
+https://flutter.dev/docs/get-started/install
+
+### Step 2 — Install Packages
 
 ```bash
 flutter pub get
+```
+
+### Step 3 — Run App
+
+```bash
 flutter run
 ```
 
-If you don't have Firebase configured, the app will run with local fallbacks (Hive + SharedPreferences). To enable full Firebase features (Auth, Firestore, FCM), follow the Firebase setup section above.
+### Local Fallback Mode
 
-## Publish to GitHub
-1. Create a new repository on GitHub (web UI or use `gh repo create`).
-2. From the project root:
+If Firebase is not configured, the app runs with:
+
+```text
+Hive + SharedPreferences
+```
+
+---
+
+## 🌍 Publish To GitHub
+
+### Initialize Repository
 
 ```bash
 git init
 git add .
 git commit -m "Initial commit: FocusFlow starter"
+```
+
+### Create Main Branch
+
+```bash
 git branch -M main
+```
+
+### Add Remote Repository
+
+```bash
 git remote add origin https://github.com/<your-username>/focusflow.git
 git push -u origin main
 ```
 
-If you use the GitHub CLI (`gh`) you can create and push in one command:
+### GitHub CLI Alternative
 
 ```bash
 gh repo create <your-username>/focusflow --public --source=. --remote=origin --push
 ```
 
-## CI
-A simple GitHub Actions workflow is included at `.github/workflows/flutter.yml` that runs `flutter analyze` and `flutter test` on pushes to `main`.
+---
 
-## Next steps I can implement for you
-- Background Pomodoro notifications (Android/iOS)
-- Planner (AI study planner integration)
-- Analytics dashboard (charts for weekly/monthly productivity)
-- Polish UI animations and dark mode toggle
+## ⚡ Continuous Integration (CI)
 
-Tell me which feature you want next and I'll implement it and prepare a PR-ready branch.
->>>>>>> 600ebfb (chore: initial commit - FocusFlow starter)
+GitHub Actions Workflow included:
+
+```text
+.github/workflows/flutter.yml
+```
+
+Automatically runs:
+
+```text
+flutter analyze
+flutter test
+```
+
+on push to:
+
+```text
+main
+```
+
+---
+
+## 🛣️ Next Steps
+
+<table align="center">
+<tr>
+
+<td align="center" width="220">
+
+⏰ Pomodoro Notifications
+
+</td>
+
+<td align="center" width="220">
+
+🧠 AI Study Planner
+
+</td>
+
+<td align="center" width="220">
+
+📊 Analytics Dashboard
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center" width="220">
+
+🌙 Dark Mode
+
+</td>
+
+<td align="center" width="220">
+
+✨ UI Animations
+
+</td>
+
+<td align="center" width="220">
+
+📦 Offline Support
+
+</td>
+
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+## 🌟 FocusFlow
+
+### *Helping students stay productive, focused, and consistent.*
+
+Made with ❤️ using Flutter & Firebase
+
+</div>
+````
